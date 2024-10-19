@@ -61,7 +61,7 @@ classification:
 3. Run the script using the command:
 
    ```bash
-   python your_script_name.py
+   python Coldmail.py
    ```
 
 The script will connect to your email account, check for new emails every 60 seconds, classify them, and forward non-cold emails to your specified Gmail address.
