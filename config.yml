@@ -1,0 +1,27 @@
+email_credentials:
+  username: "your_email@domain.com"  # Replace with your actual email address
+  password: "your_password"  # Replace with your actual password
+  imap_server: "your_imap_server"  # Replace with your actual IMAP server
+  smtp_server: "your_smtp_server"  # Replace with your actual SMTP server
+  imap_port: 993
+  smtp_port: 465
+  gmail_address: "your_gmail_address@gmail.com"  # Replace with your actual Gmail address
+
+openai:
+  api_key: "your_openai_api_key"  # Replace with your actual OpenAI API key
+
+classification:
+  prompt_template: |
+    You are an AI that helps classify emails as either "cold mail" or "not cold mail" based on three criteria:
+    1. If the sender has read the recipient's work.
+    2. If the sender mentions one of the recipient's papers.
+    3. If the sender has similar research interests.
+
+    Here's an email:
+    Subject: {subject}
+    Body: {body}
+
+    Classify the email based on the above criteria. Provide an explanation for your classification.
+
+  cold_response: "This email is considered cold mail."
+  not_cold_response: "This email is not considered cold mail."
